@@ -1,0 +1,13 @@
+<html>
+	<body>
+		<input onchange="user(this.value)" placeholder="Bio ID" />
+		<p>Test ID: 000000000000</p>
+		<script src="../../cdn/bioid.js"></script>
+		<script>
+			async function user(id){
+				let data = await bioid.user(id);
+				alert(JSON.stringify(data));
+			}
+		</script>
+	</body>
+</html>
