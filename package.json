@@ -1,6 +1,6 @@
 {
   "name": "bioid.id",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official Bio ID library for interacting with the Bio ID API",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
   "author": "TARIQ",
   "license": "MIT",
   "homepage": "https://bioid.id",
+  "repository": "http://github.com/1TGDev/bioid.id",
   "dependencies": {
     "colors": "^1.4.0",
     "node-fetch": "^2.6.1"
