@@ -1,1 +1,1 @@
-exports.user = require('./structures/functions/user.js');
+exports.user = require('./structures/methods/user.js');

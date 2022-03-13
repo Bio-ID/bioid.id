@@ -1,12 +1,20 @@
 <html>
 	<body>
-		<input onchange="user(this.value)" placeholder="Bio ID" />
 		<p>Test ID: 000000000000</p>
-		<script src="../../cdn/bioid.js"></script>
+		<input onchange="user(this.value)" placeholder="Bio ID" />
+		<p>Test ID: 300530315351425024</p>
+		<input onchange="discord(this.value)" placeholder="Discord ID" />
+		<script src="../../cdn/bio.js"></script>
 		<script>
 			async function user(id){
-				let data = await bioid.user(id);
-				alert(JSON.stringify(data));
+				let dataByBioID = await bio.user(id);
+				alert(JSON.stringify(dataByBioID));
+			}
+			async function discord(id){
+				let dataByDiscordID = await bio.user(id, {
+					id_type: "discord"
+				});
+				alert(JSON.stringify(dataByDiscordID));
 			}
 		</script>
 	</body>
